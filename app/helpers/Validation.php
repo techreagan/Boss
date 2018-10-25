@@ -109,4 +109,16 @@ class Validation {
   public static function validateEmail($value) {
     return filter_var($value, FILTER_VALIDATE_EMAIL);
   }
+
+  /* hasUppercase('abC')
+  */
+  public static function hasUppercase($value) {
+    return !preg_match('/[A-Z]/', $value);
+  }
+
+  /* hasNumber('abc1')
+  */
+  public static function hasNumber($value) {
+    return !preg_match('/[0-9]/', $value);
+  }
 }
