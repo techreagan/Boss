@@ -56,11 +56,11 @@ class Validation {
     * use trim() if spaces should not count
   */
   public static function hasLength($value, $options) {
-    if(isset($options['min']) && !hasLengthGreaterThan($value, $options['min'] - 1)) {
+    if(isset($options['min']) && !self::hasLengthGreaterThan($value, $options['min'] - 1)) {
       return false;
-    } elseif(isset($options['max']) && !hasLengthLessThan($value, $options['max'] + 1)) {
+    } elseif(isset($options['max']) && !self::hasLengthLessThan($value, $options['max'] + 1)) {
       return false;
-    } elseif(isset($options['exact']) && !hasLengthExactly($value, $options['exact'])) {
+    } elseif(isset($options['exact']) && !self::hasLengthExactly($value, $options['exact'])) {
       return false;
     } else {
       return true;
