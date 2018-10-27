@@ -1,4 +1,6 @@
 <?php 
+ob_start();
+session_start();
 
 // DB Params
 define('DB_HOST', 'localhost');
