@@ -45,7 +45,7 @@ define('SITENAME', '_YOUR_SITENAME_');
 ```
 
 
-### htaccess file
+### Htaccess file
 
 Modify the .htaccess file inside the public folder to match the name of your installation folder, Modify only the RewriteBase.
 
